@@ -1,0 +1,342 @@
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    width:1000px;
+    max-width:100vw;
+    margin: 0 auto;
+    background-color:#000009;
+    color:#fffccc;
+}
+
+/* resolutions body */
+
+@media (max-width:999px) {
+    body {
+        width:500px;
+        margin:0 auto;
+    }
+}
+@media (max-width:520px) {
+    body {
+        width:320px;
+    }
+}
+header {
+    position:relative;
+}
+header h2 {
+    display:inline-block;
+    position:absolute;
+    right:0;
+    margin:10px 10px 0 0;
+    text-align:center;
+    letter-spacing:1.2px;
+}
+header h1 {
+    float:left;
+    margin:10px 0 0 10px;
+    font-size:50px;
+    letter-spacing:4px;
+}
+header a {
+    text-decoration:none;
+    color:#fffccc;
+    font-family:''; /* fontTitles */
+}
+
+/* resolutions header */
+
+@media (max-width:999px) {
+    header h1 {
+        font-size:40px;
+    }
+    header h2 {
+        font-size:20px;
+    }
+}
+@media (max-width:520px) {
+    header h1 {
+        font-size:25px;
+    }
+    header h2 {
+        font-size:10px;
+        margin-right:20px;
+    }
+}
+/* sections and tiles */
+
+#right {
+    float:left;
+    position:relative;
+    width:500px;
+    height:400px;
+    background-color:#cccbbb;
+}
+#right a {
+    display:block;
+    height:100%;
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    font-size:25px;
+    line-height:2em;
+}
+#left {
+    float:left;
+    width:500px;
+    height:400px;
+    background-color:#cccbbb;
+}
+.tiles {
+    float:left;
+    width:240px;
+    height:150px;
+    margin:5px;
+    border-radius:2%;
+    text-align:center; 
+}
+.tiles i {
+    font-size:60px;
+    line-height:1.5em;
+    color:white;
+}
+.tile1 {
+    background-color:#0000ff;
+}
+.tile1:hover {
+    background-color:#2222ff;
+}
+.tile2 {
+    background-color:#ff3300;
+}
+.tile2:hover {
+    background-color:#ff5522;
+}
+.tile3 {
+    background-color:#ff9900;
+}
+.tile3:hover {
+    background-color:#ffaa11;
+}
+.tile4 {
+    background-color:#00cc00;
+}
+.tile4:hover {
+    background-color:#00ff00;
+}
+
+/* articles */
+
+article {
+    padding-top:30px
+}
+article h1 {
+    text-align:center;
+    font-family:'';
+    font-size:30px;
+    line-height:1.5em;
+    letter-spacing:8px;
+    margin-bottom:35px;
+    color:black;
+}
+article p {
+    text-align:center;
+    color:black;
+    font-family:'';
+    font-size:20px;
+}
+article p a {
+    text-decoration:none;
+    color:black;
+}
+article:hover p a {
+    text-decoration:underline;
+}
+article p i {
+    font-size:40px;
+    color:black;
+}
+
+/* resolutions sections and articles */
+
+@media (min-width:1000px) {
+    .tiles {
+        margin-top:30px    
+    }
+}
+
+@media (max-width:999px) {
+    #right {
+        float:none;
+    }
+    #left {
+        float:none;
+        height:auto;
+    }
+    article {
+        border:none;
+        border-bottom:10px solid #cccbbb;
+    }
+}
+@media (max-width:520px) {
+    #right {
+        max-width:320px;
+        height:auto;
+    }
+    #left {
+        max-width:320px;
+    }
+    article p {
+        font-size:15px;
+    }
+    article p i {
+        font-size:20px;
+    }
+    .tiles {
+        float:none;
+        width:150px;
+        height:93px;
+        margin:3px auto;
+        text-align:center;
+    }
+    .tiles:first-child {
+        margin-top:0;
+    }
+    .tiles:last-child {
+        border-bottom:3px solid #cccbbb;
+    }
+    .tiles i {
+        font-size:25px;
+        color:white;
+    }
+    #right a {
+        font-size:20px;
+    }
+
+}
+
+/* socials */
+
+#sectionBottom {
+    float:left;
+    width:500px;
+    height:100px;
+    background-color:;
+}
+.social {
+    float:left;
+    width:100px;
+    height:80px;
+    border-radius:10px;
+    margin:10px auto 10px 50px;
+    text-align:center;
+    font-size:40px;
+    line-height:2em;
+}
+.fb {
+    background-color:#3b5998;
+}
+.fb:hover {
+    background-color:#4c6aa9;
+    font-size:45px;
+}
+.fb a {
+    display:block;
+    text-decoration:none;
+    color:white;
+}
+.gmail {
+    background-color:#D84B37;
+}
+.gmail:hover {
+    background-color:#c95c48;
+    font-size:45px;
+}
+.gmail a {
+    display:block;
+    text-decoration:none;
+    color:white;
+}
+.skype {
+    background-color:#00AFF0;
+}
+.skype:hover {
+    background-color:#11bff1;
+    font-size:45px;
+}
+.skype a {
+    display:block;
+    text-decoration:none;
+    color:white;
+}
+
+/* resolutions socials */
+
+@media (max-width:520px) {
+    #sectionBottom {
+        float:none;
+        width:320px;
+    }
+    .social {
+        float:left;
+        width:80px;
+        height:50px;
+        text-align:center;
+        font-size:20px;
+        line-height:2.5em;
+        margin:0;
+    }
+    .social:first-child {
+        margin-right:20px;
+        margin-left:20px;
+    }
+    .social:last-child {
+        margin-left:20px;
+    }
+    .fb:hover {
+        font-size:25px;
+    }
+    .gmail:hover {
+        font-size:25px;
+    }
+    .skype:hover {
+        font-size:25px;
+    }
+}
+
+/* bottom */
+
+aside {
+    float:left;
+    width:500px;
+    height:100px;
+    text-align:center;
+    font-size:30px;
+    letter-spacing:10px;
+    line-height:3em;
+}
+footer {
+    text-align:center;
+    line-height:5.5;
+}
+
+/* resolutions bottom */
+
+@media (max-width:520px) {
+    aside {
+        float:none;
+        width:320px;
+        font-size:20px;
+        height:100px;
+    }
+    footer {
+        width:250px;
+        margin:0 auto;
+        line-height:1.5em;
+    }
+}
+
+/* ---The end of index.html--- */
+
